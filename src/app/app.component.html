@@ -1,0 +1,94 @@
+<h1>Picture Gallery</h1>
+
+    <ul class="results" >
+        <li class="result" *ngFor="let item of pictures; let i = index">
+            <a href="#">
+                <img src="../assets/{{item.image}}" width="500" height="500" on-click="myInfo2(i)">
+            </a>
+            
+        </li>
+       
+    </ul>
+   
+
+    <div [ngSwitch] = "toShow">
+        <ng-template ngSwitchCase="show0">   
+            <div class="info">
+                <h2>{{pictureInfo(0)}}</h2>
+                <p>{{pictures[0].description}}</p>  
+                <img src="../assets/{{pictures[0].image}}">
+            </div>    
+        </ng-template>
+       
+        <ng-template ngSwitchCase="show1">  
+            <div class="info">
+                <h2>{{pictureInfo(1)}}</h2>
+                <p>{{pictures[1].description}}</p>  
+                <img src="../assets/{{pictures[1].image}}">
+            </div>                         
+        </ng-template>
+
+        <ng-template ngSwitchCase="show2">   
+            <div class="info">         
+                <h2>{{pictureInfo(2)}}</h2>
+                <p>{{pictures[2].description}}</p>  
+                <img src="../assets/{{pictures[2].image}}">
+            </div>    
+        </ng-template>
+       
+        <ng-template ngSwitchCase="show3">  
+            <div class="info">               
+                <h2>{{pictureInfo(3)}}</h2>
+                <p>{{pictures[3].description}}</p>  
+                <img src="../assets/{{pictures[3].image}}">
+            </div> 
+        </ng-template>
+
+        <ng-template ngSwitchCase="show4">      
+            <div class="info">           
+                <h2>{{pictureInfo(4)}}</h2>
+                <p>{{pictures[4].description}}</p>  
+                <img src="../assets/{{pictures[4].image}}">
+            </div>   
+        </ng-template>
+       
+        <ng-template ngSwitchCase="show5">   
+            <div class="info">              
+                <h2>{{pictureInfo(5)}}</h2>
+                <p>{{pictures[5].description}}</p>  
+                <img src="../assets/{{pictures[5].image}}">
+            </div> 
+        </ng-template>
+
+        <ng-template ngSwitchCase="show6">     
+            <div class="info">            
+                <h2>{{pictureInfo(6)}}</h2>
+                <p>{{pictures[6].description}}</p>  
+                <img src="../assets/{{pictures[6].image}}">
+            </div>   
+        </ng-template>
+       
+        <ng-template ngSwitchCase="show7">
+            <div class="info">                
+                <h2>{{pictureInfo(7)}}</h2>
+                <p>{{pictures[7].description}}</p>  
+                <img src="../assets/{{pictures[7].image}}">
+            </div>  
+        </ng-template>
+
+        <ng-template ngSwitchCase="show8">
+            <div class="info">          
+                <h2>{{pictureInfo(8)}}</h2>
+                <p>{{pictures[8].description}}</p>  
+                <img src="../assets/{{pictures[8].image}}">
+            </div>  
+        </ng-template>
+       
+        <ng-template ngSwitchCase="show9">   
+            <div class="info">              
+                <h2>{{pictureInfo(9)}}</h2>
+                <p>{{pictures[9].description}}</p>  
+                <img src="../assets/{{pictures[9].image}}">
+            </div>
+        </ng-template>
+    </div>

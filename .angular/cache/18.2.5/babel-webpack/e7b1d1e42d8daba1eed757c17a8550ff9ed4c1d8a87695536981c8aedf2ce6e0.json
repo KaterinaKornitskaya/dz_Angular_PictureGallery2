@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Picture {\n  image;\n  name;\n  author;\n  year;\n  description;\n  constructor(image, name, author, year, description) {\n    this.image = image;\n    this.name = name;\n    this.author = author;\n    this.year = year;\n    this.description = description;\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

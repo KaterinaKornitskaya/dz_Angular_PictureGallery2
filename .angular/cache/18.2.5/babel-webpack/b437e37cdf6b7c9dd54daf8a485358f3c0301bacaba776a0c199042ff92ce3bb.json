@@ -1,0 +1,1 @@
+{"ast":null,"code":"// Функция-декоратор @Component ассоциирует метаданные с классом компонента AppComponent.\n// Декоратор @Component позволяет идентифицировать класс AppComponent как компонент.\nexport {};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
